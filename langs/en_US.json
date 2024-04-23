@@ -1,0 +1,20 @@
+{
+  "app": {
+    "about": {
+      "name": "Name",
+      "version": "Version",
+      "issue": "Issues",
+      "buildTime": "Build Time"
+    },
+    "setting": {
+      "algorithm": "algorithm",
+      "colorPrimary": "colorPrimary",
+      "borderRadius": "borderRadius",
+      "datadir": "Data Directory",
+      "protodir": "Protocol Directory",
+      "save": "Save",
+      "reset": "Reset",
+      "statInterval": "Stat update interval"
+    }
+  }
+}

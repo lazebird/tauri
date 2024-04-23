@@ -1,0 +1,21 @@
+{
+  "app": {
+    "about": {
+      "name": "名称",
+      "version": "版本",
+      "issue": "故障",
+      "buildTime": "构建时间"
+    },
+
+    "setting": {
+      "algorithm": "算法",
+      "colorPrimary": "主色",
+      "borderRadius": "边缘角度",
+      "datadir": "数据目录",
+      "protodir": "协议目录",
+      "save": "保存",
+      "reset": "重置",
+      "statInterval": "统计更新间隔"
+    }
+  }
+}
