@@ -7,7 +7,7 @@
       <a-form-item :label="t('app.setting.borderRadius')" name="borderRadius" required> <a-input-number v-model:value="conf.borderRadius" /> </a-form-item>
       <a-form-item :label="t('app.setting.statInterval')" name="stat_interval" required> <a-input-number v-model:value="conf.stat_interval" /> </a-form-item>
       <a-form-item :label="t('app.setting.datadir')">
-        <a @click="open(conf.data_dir)">{{ conf.data_dir }} </a>
+        <a>{{ conf.data_dir }} </a>
       </a-form-item>
       <a-form-item :label="t('app.setting.protodir')" name="protocol_dir">
         <a @click="onDbclick">{{ conf.protocol_dir }}</a>
@@ -23,8 +23,6 @@
 import { ref, h } from "vue";
 import { UndoOutlined, SaveOutlined } from "@ant-design/icons-vue";
 import { useConfigStore } from "@/store/config";
-import { open } from "@tauri-apps/api/shell";
-import { open as dopen } from "@tauri-apps/api/dialog";
 import { theme } from "ant-design-vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
@@ -36,11 +34,7 @@ const setForm = ref();
 const conf = ref({ ...configStore.conf });
 const onSave = () => configStore.update({ ...configStore.conf, ...conf.value });
 const onReset = () => (conf.value = { ...configStore.conf });
-async function onDbclick() {
-  const selected = await dopen({ directory: true, defaultPath: conf.value.protocol_dir });
-  if (!selected) return;
-  conf.value.protocol_dir = selected;
-}
+function onDbclick() {}
 </script>
 <style scoped>
 .btn {

@@ -1,7 +1,6 @@
 import { ref } from "vue";
 import { defineStore } from "pinia";
 import { store } from "./index";
-import { invoke } from "@tauri-apps/api";
 import { useConfigStoreOut } from "./config";
 import { LocaleConf } from "#/tauri";
 // import { message as alert } from "ant-design-vue";
@@ -28,15 +27,8 @@ export const useLocaleStore = defineStore("locale", () => {
   const messages = ref({} as any);
   async function load(locale: string) {
     if (!messages.value[locale]) {
-      let message: any = {};
+      let message: any;
       let count = 0;
-      try {
-        message = JSON.parse(await invoke("read_file", { dname: "", fname: `${locale}.json` }));
-      } catch (e: any) {
-        console.warn("load customize %s.json error: %s", locale, e.toLocaleString());
-        message = undefined;
-        console.log("test ", ++count);
-      }
       try {
         console.log("test ", ++count);
         if (!message) message = await import(`../../langs/${locale}.json`);

@@ -8,10 +8,8 @@ import visualizer from "rollup-plugin-visualizer";
 
 import shelljs from "shelljs";
 import pkg from "./package.json";
-import app from "./src-tauri/tauri.conf.json";
 
-const { name, homepage, issuepage, releasepage } = pkg;
-const { version } = app.package;
+const { name, homepage, issuepage, releasepage, version } = pkg;
 const __APP_INFO__ = {
   pkg: { name, version, homepage, issuepage, releasepage },
   git: {
