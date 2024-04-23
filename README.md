@@ -15,3 +15,7 @@
 
 ## 正常
 ![normal](./doc/normal.png)
+
+## web分支说明
+- 纯web方式复现bug
+- 本地通过`pnpm build`编译，通过hfs软件搭建web服务器，将dist目录下文件挂载为根文件，访问web页面，出现白屏，开发者工具中日志输出和app类似
