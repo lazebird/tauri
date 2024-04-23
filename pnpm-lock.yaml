@@ -15,8 +15,8 @@ importers:
         specifier: ^1.5.3
         version: 1.5.3
       ant-design-vue:
-        specifier: 4.0.8
-        version: 4.0.8(vue@3.4.23(typescript@5.4.5))
+        specifier: 4.2.0
+        version: 4.2.0(vue@3.4.23(typescript@5.4.5))
       pinia:
         specifier: ^2.1.7
         version: 2.1.7(typescript@5.4.5)(vue@3.4.23(typescript@5.4.5))
@@ -839,8 +839,8 @@ packages:
     resolution: {integrity: sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==}
     engines: {node: '>=12'}
 
-  ant-design-vue@4.0.8:
-    resolution: {integrity: sha512-SyPgbiPqxgXWHywxcstJN+j9N6PoZf6y5Gvvdbb+9od+uizmh2A+TnXmIHVJ44D1V1+YjXPz1EpLfIpxqDqu9A==}
+  ant-design-vue@4.2.0:
+    resolution: {integrity: sha512-tw20aZn5Qv/xtJze+BMPNueS8pETBeuO1UWqbBQmg2/wp9WmtetsbEcANBg1QERI6E9ikSrQ2Yr9xlIyIJEYdw==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
       vue: '>=3.2.0'
@@ -3621,7 +3621,7 @@ snapshots:
 
   ansi-styles@6.2.1: {}
 
-  ant-design-vue@4.0.8(vue@3.4.23(typescript@5.4.5)):
+  ant-design-vue@4.2.0(vue@3.4.23(typescript@5.4.5)):
     dependencies:
       '@ant-design/colors': 6.0.0
       '@ant-design/icons-vue': 7.0.1(vue@3.4.23(typescript@5.4.5))
