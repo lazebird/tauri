@@ -4,7 +4,10 @@
       "name": "Name",
       "version": "Version",
       "issue": "Issues",
-      "buildTime": "Build Time"
+      "buildTime": "Build Time",
+      "dep": "Dependencies",
+      "info": "Basic Information",
+      "devDep": "Development Dependencies"
     },
     "setting": {
       "algorithm": "algorithm",

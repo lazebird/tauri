@@ -4,7 +4,10 @@
       "name": "名称",
       "version": "版本",
       "issue": "故障",
-      "buildTime": "构建时间"
+      "buildTime": "构建时间",
+      "dep": "生产依赖",
+      "info": "基本信息",
+      "devDep": "开发依赖"
     },
 
     "setting": {
